@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
-
+import _ from 'lodash'
 Vue.use(Vuex)
 
 
 export default new Vuex.Store({
   state: {
-
+    movie : {},
     movies : [],
   },
   getters: {
@@ -17,6 +17,11 @@ export default new Vuex.Store({
     GET_MOVIE : function(state,res){
       state.movies = res.data.results
       
+    },
+    PICK_MOVIE : function(state){
+      // console.log(state.movies)
+      state.movie = _.sample(state.movies)
+      // console.log(state.movie)
     }
   },
   actions: {
@@ -33,10 +38,14 @@ export default new Vuex.Store({
         params,
       })
         .then(res => {
-          console.log(res.data.results)
+          // console.log(res.data.results)
           commit('GET_MOVIE',res)
+          commit('PICK_MOVIE')
         })
-    }
+    },
+    // pickMovie:function({commit}){
+    //   commit('PICK_MOVIE')
+    // }
 
   },
   modules: {

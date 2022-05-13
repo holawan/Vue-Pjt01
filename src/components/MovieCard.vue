@@ -44,8 +44,8 @@ export default {
   /* white-space: nowrap; */
   /* word-break:break-all; */
 
-  width: 20rem; 
-  height: 30rem;
+  /* width: 20rem; 
+  height: 30rem; */
 
 
 }
