@@ -3,7 +3,7 @@
     <br>
     <div id="mainWatch">
       <br>
-      <h1>시계는 와치!</h1>
+      <h1>춘식이의 워너비 영화 </h1>
       <br>
       <input class="mx-4" type="text" @keyup.enter="inputMovie" v-model="movieTitle">
       <button class="btn btn-secondary" @click="inputMovie">add</button>
