@@ -1,14 +1,11 @@
 <template>
-  
+  <!-- flex와 justify를 줘서 중앙 정렬한다. -->
   <div class="d-flex justify-content-center">
-    <!-- <div class="img" style="{'background-image': 'url('@/assets/bg.png')'}">
-      <div class="content">
-        <h2>{{wannabe}}</h2>
-        </div>
-        <div class="img-cover"></div>
-    </div> -->
+    <!-- 이미지 위에 글씨를 덮어쓴다. -->
     <div class="jb-wrap">
+      <!-- 이미지는 assets에서 가져오고, -->
       <div class="jb-image"><img src="@/assets/bg.png" alt=""></div>
+      <!-- text를 넣어준다. -->
       <h3 class="jb-text">
         {{wannabe}}
       </h3>
@@ -30,23 +27,6 @@ export default {
 </script>
 
 <style>
-.img{
-    position: relative;
-    /* background-image: '@/assets/bg.png';                                                                */
-    height: 100vh;
-    background-size: cover;
-}
-/* 
-.img .content{
-     position: absolute;
-     top:50%;
-     left:50%;
-     transform: translate(-50%, -50%);                                                                   
-     font-size:5rem;
-     color: black;
-     z-index: 2;
-     text-align: center;
-} */
   .jb-wrap {
     width: 300px;
     position: relative;
