@@ -1,6 +1,9 @@
 <template>
+  
   <div>
-    {{wannabe}}
+    <div class="contents">
+      <h5> {{wannabe}}</h5>
+    </div>
   </div>
 </template>
 
@@ -18,5 +21,9 @@ export default {
 </script>
 
 <style>
-
+.contents{
+  background-color: rgb(255, 192, 239);
+  border-radius: 5px;
+  color: rgb(108, 107, 107);
+}
 </style>
