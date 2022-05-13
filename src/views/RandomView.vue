@@ -2,8 +2,7 @@
   <div>
     <br>
     <br>
-    <button class="btn rounded-pill btn-light" @click="randomSelect">pick!
-    </button>
+    <button class="btn rounded-pill" @click="randomSelect" style="background-color:rgba(117, 150, 225, 0.786) ; color: white; width: 100px;" >pick!</button>
     <br>
     <br>
     <br>
