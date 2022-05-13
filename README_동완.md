@@ -97,3 +97,47 @@
 
 
 
+### 부모 자식 형성하기
+
+- component에 WatchListItem, WatchListForm를 만들어주고, WatchListView 컴포넌트에도 추가해준다.
+
+### ListForm
+
+- 데이터를 create할 input과 button을 만든다. 
+- input은 v-model로 아래 method에서 동기되게 한다.
+- data는 movieTitle로 정해두고
+- enter나 클릭이 발생하면 createdMovie를 현재 movieTitle로 정의한다.
+- 데이터가 있다면, wannabeMovie에 createdMovie를 담아서 보낸다.
+- movieTitle input은 비워준다.
+
+### Index.js
+
+- state에 wannabes를 담을 
+- wannabeMovie 요청이 들어오면 들어온 wannabe와 함께 WANNABE_MOVIE로 커밋한다.
+- WANNABE mutation으로 커밋이 들어오면 wanabe를 wannabes에 push한다
+
+### WatchListView
+
+- mapstate로 vuex에서 wannabes를 가져온다.
+- 해당 wannabes를 wannabe,idx를 for문으로 돌리고, wannabe_lst에 담아서 넘겨준다.
+
+### WatchListItem
+
+- watchListItem은 데이터를 받은 후 key의 odd/even 여부에 따라, 다른 색의 포스트잇이 출력되게 한다.
+
+
+
+### 어려웠던 점 
+
+- Vue Bootstrap을 이용해 card, navbar등을 작성하려 했으나, CSS가 꼬여 잘 되지 않았습니다.
+  - 기본 Bootstrap을 이용해 해결할 수 있었습니다.
+- Card grid시스템 정렬 과정에서 오류를 겪었습니다.
+  - 개발자도구를 이용해 DOM구조를 식별한 후 해결할 수 있었습니다.
+- 이미지 위에 글씨 쓰기가 잘 되지 않았습니다.
+  - 구글링/페어와 아이디어 공유를 통해 해결할 수 있었습니다.
+
+### 좋았던 점
+
+- 멋진 네비게이터님이 지도를 해주셔서 쉽게 코딩할 수 있었습니다
+- Vue 수업을 잘 따라가지 못했는데 처음부터 다시 해보면서 이해를 할 수 있었습니다.
+- Vuex에 대한 이해도를 높일 수 있었습니다.
