@@ -67,7 +67,7 @@
 
 ### Pick
 
-![Random_Movie](README_동완.assets/Random_Movie.PNG)
+![item](README_동완.assets/item.PNG)
 
 
 
