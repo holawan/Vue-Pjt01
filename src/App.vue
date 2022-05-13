@@ -1,13 +1,21 @@
 <template>
+
   <div id="app">
     <nav>
+
       <router-link to="/">Home</router-link> |
       <router-link to="/random">Random</router-link>  |
       <router-link to="/watch-list">MyMovieList</router-link>
+
+       <!-- <router-link to="/">Home</router-link> |
+      <router-link to="/random">Random</router-link>  |
+      <router-link to="/watch-list">MyMovieList</router-link> -->
+      <router-view/>
     </nav>
-    <router-view/>
   </div>
 </template>
+
+
 
 <style>
 #app {
@@ -29,5 +37,11 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+b-navbar-nav{
+  /* display: flex;
+  flex-direction: row-reverse; */
+  position: absolute;
+  right: 0px;
 }
 </style>
