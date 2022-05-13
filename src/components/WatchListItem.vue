@@ -4,10 +4,11 @@
     <!-- 이미지 위에 글씨를 덮어쓴다. -->
     <div class="jb-wrap">
       <!-- 이미지는 assets에서 가져오고, -->
-      <div class="jb-image"><img src="@/assets/bg.png" alt=""></div>
+      <div v-if="wannabe_lst[1]%2"  class="jb-image"><img src="@/assets/bg.png" alt=""></div>
+      <div v-else class="jb-image"><img src="@/assets/bg3.png" alt=""></div>
       <!-- text를 넣어준다. -->
       <h3 class="jb-text">
-        {{wannabe}}
+        {{wannabe_lst[0]}}
       </h3>
     </div>
   </div>
@@ -18,10 +19,8 @@
 export default {
   name:'WatchListItem',
   props:{
-    wannabe:String,
+    wannabe_lst:Array,
   },
-
-
 }
 
 </script>

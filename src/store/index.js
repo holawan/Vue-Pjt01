@@ -40,7 +40,7 @@ export default new Vuex.Store({
   actions: {
     // getmovie 요청이 들어오면
     getMovie : function({commit}){
-      // BASE_URLㅇ르 생성해준다.  
+      // BASE_URL을mua 생성해준다.  
       const API_URL = 'https://api.themoviedb.org/3/movie/top_rated'
       // 요구되는 파라미터들을 정의해준다.
       const params = {

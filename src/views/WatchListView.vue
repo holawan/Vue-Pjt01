@@ -4,7 +4,7 @@
     <watch-list-form></watch-list-form>
     <!-- 보고싶은 영화 리스트는 for문을 돌려서 가져온다. -->
     <watch-list-item
-      v-for="wannabe in wannabes" :key="wannabe.idx" :wannabe="wannabe"
+      v-for="(wannabe,idx) in wannabes" :key="idx" :wannabe_lst="[wannabe,idx]" 
     ></watch-list-item>
   </div>
 </template>
