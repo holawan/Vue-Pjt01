@@ -11,15 +11,16 @@ export default new Vuex.Store({
     movies : [],
   },
   getters: {
+    
   },
   mutations: {
-    HOME_MOVIE : function(state,res){
-      state.movies = res
+    GET_MOVIE : function(state,res){
+      state.movies = res.data.results
       
     }
   },
   actions: {
-    homeMovie : function({commit}){
+    getMovie : function({commit}){
       const API_URL = 'https://api.themoviedb.org/3/movie/top_rated'
       const params = {
         api_key : process.env.VUE_APP_TMDB_API_KEY,
@@ -32,8 +33,8 @@ export default new Vuex.Store({
         params,
       })
         .then(res => {
-          console.log(res)
-          commit('HOME_MOVIE',res)
+          console.log(res.data.results)
+          commit('GET_MOVIE',res)
         })
     }
 
