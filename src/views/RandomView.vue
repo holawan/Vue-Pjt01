@@ -1,23 +1,22 @@
 <template>
   <div>
-
-    <button @click="randomSelect">pick!
+    <br>
+    <br>
+    <button class="btn rounded-pill btn-light" @click="randomSelect">pick!
     </button>
-    <div v-if="movie.title">
-          <b-card
-    :title= "movie.title"
-    :img-src= url
-    img-alt="Image"
-    img-top
-    tag="article"
-    style="width: 20rem; height: 30rem;" 
-    class="mb-2"
-  >
-    <b-card-text class="text">
-      "{{movie.overview}}"
-    </b-card-text>
+    <br>
+    <br>
+    <br>
+    <div v-if="movie.title" class=" row justify-content-center">
+      <div class="col-3 card mx-4 mb-4" style="width: 18rem;padding-left:0px;">
+          <img class="card-img-top " :src=url alt="Card image cap" style="width:18rem; height:25rem; box-sizing:content-box;">
+          <br>
+            <h5>{{movie.title}}</h5>
+          <div class="card-body">
+            <p class="card-text">{{movie.overview}}</p>
+          </div>
 
-    </b-card>
+      </div>
 
     </div>
     <p v-else> PICK!!!</p>

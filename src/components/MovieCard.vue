@@ -1,29 +1,16 @@
 <template>
-  <!-- <div class="embed-responsive embed-responsive-4by3">
 
-    <b-card 
-    :title= "movie.title"
-    :img-src= url
-    img-alt="Image"
-    img-top
-    tag="article"
-    style="width: 300px; max-height: 100px" 
-    class="mb-2 card-img-top embed-responsive-item"
-  >
-    <b-card-text class="text">
-      "{{movie.overview}}"
-    </b-card-text>
 
-    </b-card>
-  </div> -->
-  <div class="card" style="width: 18rem; max-height: 300px;">
-  <img class="card-img-top" :src=url alt="Card image cap">
-  <br>
-    <h5>{{movie.title}}</h5>
-  <div class="card-body">
-    <p class="card-text">{{movie.overview}}</p>
+  <div class="col-3 card mx-4 mb-5" style="width: 18rem;padding-left:0px;">
+      <img class="card-img-top " :src=url alt="Card image cap" style="width:18rem; height:25rem; box-sizing:content-box;">
+      <br>
+        <h5>{{movie.title}}</h5>
+      <div class="card-body">
+        <p class="card-text">{{movie.overview}}</p>
+      </div>
   </div>
-</div>
+
+  
 </template>
 
 <script>

@@ -1,8 +1,18 @@
 <template>
-  <div class="home container ">
-    <movie-card class="col-3"
-    v-for="movie in movies" :key="movie.id" :movie="movie"
-    ></movie-card>
+  <div>
+    <br>
+    <br>
+    <br>
+    <div class="home container" >
+      <br>
+      <br>
+      <div class="row justify-content-center">
+        <movie-card  
+        v-for="movie in movies" :key="movie.id" :movie="movie"
+        ></movie-card>
+
+      </div>
+    </div>
   </div>
 </template>
 

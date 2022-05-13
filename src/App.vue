@@ -12,6 +12,7 @@
       <router-link to="/watch-list">MyMovieList</router-link> -->
       <router-view/>
     </nav>
+    
   </div>
 </template>
 
