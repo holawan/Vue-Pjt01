@@ -9,6 +9,7 @@ export default new Vuex.Store({
   state: {
     movie : {},
     movies : [],
+    wannabes : [],
   },
   getters: {
 
@@ -22,6 +23,10 @@ export default new Vuex.Store({
       // console.log(state.movies)
       state.movie = _.sample(state.movies)
       // console.log(state.movie)
+    },
+    WANNABE_MOVIE : function(state,wannabe){
+      state.wannabes.push(wannabe)
+      // console.log(state.wannabes)
     }
   },
   actions: {
@@ -43,10 +48,10 @@ export default new Vuex.Store({
           commit('PICK_MOVIE')
         })
     },
-    // pickMovie:function({commit}){
-    //   commit('PICK_MOVIE')
-    // }
-
+    wannabeMovie : function({commit},wannabe){
+      commit('WANNABE_MOVIE',wannabe)
+    }
+    
   },
   modules: {
   }
