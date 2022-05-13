@@ -27,12 +27,15 @@ export default {
 
 <style>
   .jb-wrap {
-    width: 300px;
+    width: 700px;
     position: relative;
+    justify-content: center;
   }
   .jb-wrap img {
-    width: 100%;
+    width: 500px;
+    height: 100px;
     vertical-align: middle;
+    justify-content: center;
   }
   .jb-text {
     padding: 5px 10px;
