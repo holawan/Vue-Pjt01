@@ -65,11 +65,7 @@
 
 
 
-### Pick
-
-![item](README_동완.assets/item.PNG)
-
-
+### Pick![Random_Movie](README_동완.assets/Random_Movie-16525033095461.PNG)
 
 ### 랜덤 영화 뽑기
 
@@ -93,7 +89,7 @@
 
 ### MOVIE_LIST
 
-![MOVIE_LIST](README_동완.assets/MOVIE_LIST.PNG)
+![item](README_동완.assets/item.PNG)
 
 
 
