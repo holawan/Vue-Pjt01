@@ -17,7 +17,6 @@
 - Visual Studio Code
 - Vue.js 2.X
 - Node 16.X
-- Django 3.2+
 - Chrome Brower
 
 ### 요구사항 
@@ -51,7 +50,7 @@
 
 - TMDB Base API_URL을 정의해주고, 기본 파라미터들을 정의해줍니다.
 - axios를 요청을 보내고 성공하면 'GET_MOVIE' mutations에 결과를 담아서 push하게 합니다.
-- GET_MOVIE에 커밋이 들어오면, state의 movies에 결과를 담아줍ㄴ디ㅏ.
+- GET_MOVIE에 커밋이 들어오면, state의 movies에 결과를 담아줍니다.
 
 ### HomeView에서 데이터 요청
 
